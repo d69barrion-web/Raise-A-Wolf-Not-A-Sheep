@@ -358,6 +358,23 @@
         </p>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+  fetch("Introduction.md")
+    .then(r => {
+      if (!r.ok) throw new Error("Could not load article.md");
+      return r.text();
+    })
+    .then(md => {
+      document.getElementById("content").innerHTML = marked.parse(md);
+      document.title = document.querySelector("#content h1")?.textContent || document.title;
+    })
+    .catch(err => {
+      document.getElementById("content").innerHTML =
+        "<h1>Article unavailable</h1><p>Make sure <code>article.md</code> is in the same folder as this HTML file.</p><p>" +
+        err.message + "</p>";
+    });
+</script>
 
 </body>
 </html>
