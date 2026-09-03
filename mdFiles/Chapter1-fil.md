@@ -2,7 +2,7 @@
 
 # BAKIT?
 
-### Ang Pinakamaka Tanong na Maaaring Itanong ng Isang Bata
+### Pinakamatalinong Tanong na Maaaring Itanong ng Isang Bata
 
 “Bakit?”
 
@@ -40,7 +40,7 @@ At iyon ang isang bagay na kailangan nating pag-ingatan.
 
 ---
 
-## 🧠 ANG PAGTATANONG AY HINDI KAWALAN NG RESPETO
+### 🧠 ANG PAGTATANONG AY HINDI KAWALAN NG RESPETO
 
 May pagkakaiba ang pagtatanong sa isang tao at ang pagiging bastos sa kanya.
 
@@ -72,7 +72,7 @@ Mas malalim itong tumitingin.
 
 ---
 
-## 🐺 ANG LOBO AY HINDI BASTA SUMUSUNOD
+### 🐺 ANG LOBO AY HINDI BASTA SUMUSUNOD
 
 Isipin mong may isang pangkat ng mga lobo na naglalakbay sa isang kagubatan.
 
@@ -112,7 +112,7 @@ Ang kailangan mong gawin ay **mag-isip.**
 
 ---
 
-# APAT NA SALITANG MAKAPAGPAPABAGO SA PARAAN NG PAG-IISIP MO
+### APAT NA SALITANG MAKAPAGPAPABAGO SA PARAAN NG PAG-IISIP MO
 
 Kapag nakaharap ka sa isang ideya, huwag kang huminto sa:
 
