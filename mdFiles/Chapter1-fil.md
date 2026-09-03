@@ -2,7 +2,7 @@
 
 # BAKIT?
 
-### Ang Pinakamakapangyarihang Tanong na Maaaring Itanong ng Isang Bata
+### Ang Pinakamaka Tanong na Maaaring Itanong ng Isang Bata
 
 “Bakit?”
 
