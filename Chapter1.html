@@ -124,13 +124,19 @@
            BOOK
         ========================= */
 
-        main {
-            max-width: var(--max-width);
-            margin: auto;
-            background: var(--paper);
-            padding: 60px clamp(25px, 6vw, 70px);
-            box-shadow: 0 0 30px rgba(0,0,0,0.04);
-        }
+        main { max-width:900px; margin:0 auto; padding:55px 22px 80px; }
+    article { background:white; padding:clamp(25px,5vw,55px); border-radius:18px; box-shadow:0 10px 35px rgba(18,35,60,.07); }
+    article h1 { font-size:42px; letter-spacing:-1px; color:var(--ink); }
+    article h2 { margin-top:42px; font-size:27px; border-left:4px solid var(--blue); padding-left:13px; }
+    article h3 { margin-top:30px; }
+    article img { max-width:100%; border-radius:12px; }
+    article blockquote { margin:25px 0; padding:15px 20px; background:#eef7ff; border-left:4px solid var(--blue); color:#38506c; }
+    article code { background:#eef1f5; padding:2px 6px; border-radius:5px; }
+    article table { width:100%; border-collapse:collapse; margin:20px 0; overflow:hidden; }
+    article th, article td { padding:11px 13px; border:1px solid var(--line); text-align:left; }
+    article th { background:#f3f7fb; }
+    footer { text-align:center; color:#748096; padding:25px; font-size:13px; }
+    .note { margin:28px 0; padding:15px 18px; background:#fff8df; border:1px solid #f0df9b; border-radius:10px; }
 
         section {
             scroll-margin-top: 70px;
