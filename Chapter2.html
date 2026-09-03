@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Raise a Wolf, Not a Sheep</title>
+
+    <meta name="description"
+          content="A Guide to Raising Independent Thinkers">
+
+    <style>
+:root {
+            --bg: #f5f3ef;
+            --paper: #fffdf9;
+            --text: #252525;
+            --muted: #777;
+            --accent: #8b5e3c;
+            --border: #ddd7cf;
+            --max-width: 760px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: Georgia, "Times New Roman", serif;
+            line-height: 1.8;
+        }
+/* =========================
+           COVER
+        ========================= */
+
+        .cover {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+            background:
+                radial-gradient(circle at center, #ffffff 0%, var(--bg) 70%);
+        }
+
+        .cover-inner {
+            max-width: 700px;
+        }
+.wolf {
+            font-size: 80px;
+            margin-bottom: 15px;
+        }
+
+        .cover h1 {
+            margin: 0;
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            line-height: 1.05;
+            letter-spacing: -2px;
+        }
+
+        .cover .subtitle {
+            margin-top: 25px;
+            font-size: 1.2rem;
+            color: var(--muted);
+            font-style: italic;
+        }
+.start-button {
+            display: inline-block;
+            margin-top: 45px;
+            padding: 14px 30px;
+            border: 1px solid var(--text);
+            color: var(--text);
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            transition: 0.2s ease;
+        }
+
+        .start-button:hover {
+            background: var(--text);
+            color: white;
+        }
+/* =========================
+           NAVIGATION
+        ========================= */
+
+        .top-nav {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background: rgba(255, 253, 249, 0.95);
+            border-bottom: 1px solid var(--border);
+            backdrop-filter: blur(8px);
+        }
+
+        .nav-inner {
+            max-width: var(--max-width);
+            margin: auto;
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            font-size: 0.85rem;
+        }
+
+        .nav-title {
+            font-weight: bold;
+        }
+
+        .nav-link {
+            color: var(--text);
+            text-decoration: none;
+        }
+/* =========================
+           BOOK
+        ========================= */
+
+        main { max-width:900px; margin:0 auto; padding:55px 22px 80px; }
+    article { background:white; padding:clamp(25px,5vw,55px); border-radius:18px; box-shadow:0 10px 35px rgba(18,35,60,.07); }
+    
+    article img { max-width:100%; border-radius:12px; }
+    article blockquote { margin:25px 0; padding:15px 20px; background:#eef7ff; border-left:4px solid var(--blue); color:#38506c; }
+    article code { background:#eef1f5; padding:2px 6px; border-radius:5px; }
+    article table { width:100%; border-collapse:collapse; margin:20px 0; overflow:hidden; }
+    article th, article td { padding:11px 13px; border:1px solid var(--line); text-align:left; }
+    article th { background:#f3f7fb; }
+    footer { text-align:center; color:#748096; padding:25px; font-size:13px; }
+    .note { margin:28px 0; padding:15px 18px; background:#fff8df; border:1px solid #f0df9b; border-radius:10px; }
+
+        section {
+            scroll-margin-top: 70px;
+        }
+
+        .chapter-label {
+            font-family: Arial, sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.75rem;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: clamp(2rem, 6vw, 3rem);
+            line-height: 1.2;
+            margin: 10px 0 30px;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 50px;
+        }
+
+        p {
+            margin: 0 0 22px;
+            font-size: 1.08rem;
+        }
+.question {
+            margin: 45px 0;
+            padding: 25px;
+            border-left: 4px solid var(--accent);
+            background: #f7f3ed;
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        .animal-title {
+            font-size: 1.7rem;
+            margin-top: 50px;
+        }
+
+        .big-idea {
+            margin: 50px 0;
+            padding: 35px 25px;
+            text-align: center;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .big-idea p {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+.wolf-rule {
+            margin-top: 50px;
+            padding: 30px;
+            text-align: center;
+            background: #252525;
+            color: white;
+        }
+
+        .wolf-rule small {
+            display: block;
+            margin-bottom: 10px;
+            font-family: Arial, sans-serif;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.7;
+        }
+
+        .wolf-rule strong {
+            font-size: 1.25rem;
+        }
+/* =========================
+           TABLE OF CONTENTS
+        ========================= */
+
+        .contents {
+            margin: 70px 0;
+            padding: 30px 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .contents h3 {
+            margin-top: 0;
+        }
+
+        .contents ol {
+            padding-left: 25px;
+        }
+
+        .contents li {
+            margin: 10px 0;
+        }
+
+        .contents a {
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        .contents a:hover {
+            color: var(--accent);
+        }
+/* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            max-width: var(--max-width);
+            margin: auto;
+            padding: 50px 20px;
+            text-align: center;
+            color: var(--muted);
+            font-family: Arial, sans-serif;
+            font-size: 0.8rem;
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 600px) {
+
+            body {
+                line-height: 1.7;
+            }
+
+            .wolf {
+                font-size: 65px;
+            }
+
+            main {
+                padding: 45px 22px;
+                box-shadow: none;
+            }
+
+            p {
+                font-size: 1.03rem;
+            }
+
+            .question {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================
+         COVER
+    ========================= -->
+
+    <header class="cover">
+
+        <div class="cover-inner">
+
+            <div class="wolf">🐺</div>
+
+            <h1>
+                Raise a Wolf,<br>
+                Not a Sheep
+            </h1>
+
+            <div class="subtitle">
+                A Guide to Raising Independent Thinkers
+            </div>
+
+            <a href="#article" class="start-button">
+                START READING
+            </a>
+
+        </div>
+
+    </header>
+<!-- =========================
+         NAVIGATION
+    ========================= -->
+
+    <nav class="top-nav">
+
+        <div class="nav-inner">
+
+            <span class="nav-title">
+                🐺 Raise a Wolf
+            </span>
+
+            <a href="index.html" class="nav-link">
+                Contents
+            </a>
+
+        </div>
+
+    </nav>
+<!-- =========================
+         BOOK
+    ========================= -->
+
+    <main id="article">
+
+        <!-- =====================
+             CONTENTS
+        ====================== -->
+        
+       <article id="content">Loading article…</article>
+        
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <p>
+            🐺 Raise a Wolf, Not a Sheep
+        </p>
+
+        <p>
+            An original e-book project
+        </p>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+  fetch("mdFiles/Chapter2-fil.md")
+    .then(r => {
+      if (!r.ok) throw new Error("Could not load article.md");
+      return r.text();
+    })
+    .then(md => {
+      document.getElementById("content").innerHTML = marked.parse(md);
+      document.title = document.querySelector("#content h1")?.textContent || document.title;
+    })
+    .catch(err => {
+      document.getElementById("content").innerHTML =
+        "<h1>Article unavailable</h1><p>Make sure <code>article.md</code> is in the same folder as this HTML file.</p><p>" +
+        err.message + "</p>";
+    });
+</script>
+
+</body>
+</html>
