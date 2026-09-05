@@ -1,4 +1,4 @@
-# KABANATA 4
+![chapter4.png](chapter4.png)
 # MATUTONG TUMAYO KAHIT MAG-ISA
 ### Hindi Dahil Mag-isa Ka, Mali Ka Na
 
