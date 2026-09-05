@@ -386,7 +386,7 @@
       // Example: ../images/chapter3.png
       // becomes:  ../images/chapter3.png relative to /mdFiles/
       const mdUrl = new URL("mdFiles/Chapter3-fil.md", document.baseURI);
-      const mdFolder = new URL("./", mdUrl);
+      const mdFolder = new URL("../", mdUrl);
 
       content.querySelectorAll("img").forEach(img => {
         const src = img.getAttribute("src");
