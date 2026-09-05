@@ -379,24 +379,7 @@
       return r.text();
     })
     .then(md => {
-      const content = document.getElementById("content");
-      content.innerHTML = marked.parse(md);
-
-      // Resolve relative Markdown images from the Markdown file's folder.
-      // Example: ../images/chapter3.png
-      // becomes:  ../images/chapter3.png relative to /mdFiles/
-      const mdUrl = new URL("mdFiles/Chapter3-fil.md", document.baseURI);
-      const mdFolder = new URL("../", mdUrl);
-
-      content.querySelectorAll("img").forEach(img => {
-        const src = img.getAttribute("src");
-
-        // Leave absolute URLs, data URLs, and fragment URLs unchanged.
-        if (!src || /^(?:[a-z][a-z0-9+.-]*:|\\/\\/|#)/i.test(src)) return;
-
-        img.src = new URL(src, mdFolder).href;
-      });
-
+      document.getElementById("content").innerHTML = marked.parse(md);
       document.title = document.querySelector("#content h1")?.textContent || document.title;
     })
     .catch(err => {
