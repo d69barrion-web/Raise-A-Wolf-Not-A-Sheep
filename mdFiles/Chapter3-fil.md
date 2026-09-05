@@ -1,4 +1,4 @@
-![chapter3.png](../images/chapter3.png)
+![chapter3.png](chapter3.png)
 
 # AYOS LANG MAGBAGO NG ISIP
 
