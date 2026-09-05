@@ -1,3 +1,4 @@
+![chapter3](../images/chapter3.png)
 # KABANATA 3
 
 # AYOS LANG MAGBAGO NG ISIP
