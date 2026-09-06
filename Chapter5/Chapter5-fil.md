@@ -1,4 +1,4 @@
-# KABANATA 5
+![chapter5.png](chapter5.png)
 # MATUTONG MAGSABI NG HINDI
 ### Ang “Hindi” ay Isang Buong Pangungusap
 
