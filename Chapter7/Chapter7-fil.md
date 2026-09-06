@@ -1,5 +1,5 @@
 ![chapter7.png](chapter7.png)
-## MALAKAS AY HINDI NANGANGAHULUGANG MALUPIT
+# ANG "MALAKAS" AY HINDI MALUPIT
 ### Ang Tunay na Lakas ay May Kontrol
 
 Maraming tao ang gustong maging malakas.
