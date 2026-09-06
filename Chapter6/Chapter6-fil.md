@@ -1,5 +1,5 @@
 ![chapter6.png](chapter6.png)
-# HUWAG MATUTONG MATakot SA PAGKABIGO
+# MATUTONG HUWAG MATAKOT SA PAGKABIGO
 ### Ang Pagkakamali ay Hindi Katapusan
 
 May isang bagay na halos lahat ng tao ay ayaw maranasan.
