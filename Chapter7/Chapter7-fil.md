@@ -1,4 +1,4 @@
-# KABANATA 7
+
 # MALAKAS AY HINDI NANGANGAHULUGANG MALUPIT
 ### Ang Tunay na Lakas ay May Kontrol
 
