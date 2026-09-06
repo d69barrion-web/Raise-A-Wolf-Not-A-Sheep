@@ -81,7 +81,7 @@ At ang isang independent thinker ay kailangang matutong kilalanin ang pagkakaiba
 ---
 
 # ISANG KUWENTO: ANG KENDI SA BINTANA
-
+![kuwento.png](kuwento.png)
 Alas-kuwatro na ng hapon nang matapos ang klase.
 
 Pauwi na sina **Carlo, Ben, Miguel, at Sam**. Magkakasama sila halos araw-araw. Pare-pareho silang naglalaro pagkatapos ng klase, sabay kumakain ng meryenda, at madalas nagkukulitan hanggang sa oras ng uwian.
