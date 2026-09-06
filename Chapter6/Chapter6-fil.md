@@ -1,4 +1,4 @@
-# KABANATA 6
+![chapter6.png](chapter6.png)
 # HUWAG MATUTONG MATakot SA PAGKABIGO
 ### Ang Pagkakamali ay Hindi Katapusan
 
