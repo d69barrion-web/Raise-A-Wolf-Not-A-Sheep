@@ -1,4 +1,4 @@
-# KABANATA 2
+![chapter2.png](chapter2.png)
 
 # MAG-ISIP BAGO MANIWALA
 
