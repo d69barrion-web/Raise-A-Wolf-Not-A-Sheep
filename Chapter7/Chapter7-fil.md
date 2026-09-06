@@ -1,4 +1,4 @@
-
+![chapter7.png](chapter7.png)
 # MALAKAS AY HINDI NANGANGAHULUGANG MALUPIT
 ### Ang Tunay na Lakas ay May Kontrol
 
