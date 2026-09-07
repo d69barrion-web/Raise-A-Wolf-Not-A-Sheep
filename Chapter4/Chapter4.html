@@ -50,16 +50,23 @@
         ========================= */
 
         .cover {
-            min-height: 100vh;
+            position: sticky;
+            top: 0;
+            z-index: 9;
+            min-height: 10vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 40px 20px;
-            background:
-                radial-gradient(circle at center, #ffffff 0%, var(--bg) 70%);
+            padding: 50px 5px;
+            background:radial-gradient(circle at center, #ffffff 0%, var(--bg) 70%);
+                
+            
         }
-
+.cover img{
+    width:100%;
+    border-radius:10px;
+}
         .cover-inner {
             max-width: 700px;
         }
@@ -81,6 +88,7 @@
             color: var(--muted);
             font-style: italic;
         }
+        
 .start-button {
             display: inline-block;
             margin-top: 45px;
@@ -130,6 +138,7 @@
             color: var(--text);
             text-decoration: none;
         }
+        
 /* =========================
            BOOK
         ========================= */
@@ -296,7 +305,10 @@
 </head>
 
 <body>
-
+    
+    
+        
+    
     
 <!-- =========================
          NAVIGATION
@@ -313,16 +325,20 @@
             <a href="../index.html" class="nav-link">
                 Contents
             </a>
-
         </div>
-
+        
     </nav>
+    
+    
 <!-- =========================
          BOOK
     ========================= -->
 <div class="chapter-label">
-                Chapter 4 
-            </div>
+    Chapter 3
+</div>
+<cover class="cover">
+    <img src="chapter4.png">
+</cover>
     <main id="article">
 
         <!-- =====================
@@ -332,7 +348,6 @@
        <article id="content">Loading article…</article>
         
     </main>
-
 
     <!-- =========================
          FOOTER
