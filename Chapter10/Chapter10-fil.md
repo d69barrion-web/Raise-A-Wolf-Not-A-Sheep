@@ -1,4 +1,4 @@
-# KABANATA 10
+![chapter10.png](chapter10.png)
 # HUWAG MABUHAY PARA SA APPROVAL NG IBA
 ### Hindi Mo Kailangang Magustuhan ng Lahat
 
