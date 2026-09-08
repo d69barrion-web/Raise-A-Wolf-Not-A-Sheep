@@ -1,4 +1,4 @@
-# KABANATA 8
+![chapter8.png](chapter8.png)
 # PROTEKTAHAN, HUWAG SAMANTALAHAN
 ### Ang Lakas ay May Kasamang Responsibilidad
 
