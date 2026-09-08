@@ -1,4 +1,4 @@
-# KABANATA 9
+![chapter9.png](chapter9.png)
 # ANG PAGIGING MABAIT AY HINDI KAHINAAN
 ### Malambot ang Puso, Matatag ang Paninindigan
 
