@@ -10,13 +10,15 @@
           content="A Guide to Raising Independent Thinkers">
 
     <style>
-:root {
+        :root {
             --bg: #f5f3ef;
             --paper: #fffdf9;
             --text: #252525;
             --muted: #777;
             --accent: #8b5e3c;
             --border: #ddd7cf;
+            --blue: #6b8fb3;
+            --line: #ddd7cf;
             --max-width: 760px;
         }
 
@@ -35,60 +37,8 @@
             font-family: Georgia, "Times New Roman", serif;
             line-height: 1.8;
         }
-/* =========================
-           COVER
-        ========================= */
 
-        .cover {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 40px 20px;
-            background:
-                radial-gradient(circle at center, #ffffff 0%, var(--bg) 70%);
-        }
-
-        .cover-inner {
-            max-width: 700px;
-        }
-.wolf {
-            font-size: 80px;
-            margin-bottom: 15px;
-        }
-
-        .cover h1 {
-            margin: 0;
-            font-size: clamp(2.5rem, 8vw, 5rem);
-            line-height: 1.05;
-            letter-spacing: -2px;
-        }
-
-        .cover .subtitle {
-            margin-top: 25px;
-            font-size: 1.2rem;
-            color: var(--muted);
-            font-style: italic;
-        }
-.start-button {
-            display: inline-block;
-            margin-top: 45px;
-            padding: 14px 30px;
-            border: 1px solid var(--text);
-            color: var(--text);
-            text-decoration: none;
-            font-family: Arial, sans-serif;
-            font-size: 0.9rem;
-            letter-spacing: 1px;
-            transition: 0.2s ease;
-        }
-
-        .start-button:hover {
-            background: var(--text);
-            color: white;
-        }
-/* =========================
+        /* =========================
            NAVIGATION
         ========================= */
 
@@ -120,31 +70,73 @@
             color: var(--text);
             text-decoration: none;
         }
-/* =========================
+
+        /* =========================
            BOOK
         ========================= */
 
-        main { max-width:900px; margin:0 auto; padding:55px 22px 80px; }
-    article { background:white; padding:clamp(25px,5vw,55px); border-radius:18px; box-shadow:0 10px 35px rgba(18,35,60,.07); }
-    
-    article img { max-width:100%; border-radius:12px; }
-    article blockquote { margin:25px 0; padding:15px 20px; background:#eef7ff; border-left:4px solid var(--blue); color:#38506c; }
-    article code { background:#eef1f5; padding:2px 6px; border-radius:5px; }
-    article table { width:100%; border-collapse:collapse; margin:20px 0; overflow:hidden; }
-    article th, article td { padding:11px 13px; border:1px solid var(--line); text-align:left; }
-    article th { background:#f3f7fb; }
-    footer { text-align:center; color:#748096; padding:25px; font-size:13px; }
-    .note { margin:28px 0; padding:15px 18px; background:#fff8df; border:1px solid #f0df9b; border-radius:10px; }
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 55px 22px 80px;
+        }
+
+        article {
+            background: white;
+            padding: clamp(25px, 5vw, 55px);
+            border-radius: 18px;
+            box-shadow: 0 10px 35px rgba(18,35,60,.07);
+        }
+
+        article img {
+            max-width: 100%;
+            border-radius: 12px;
+        }
+
+        article blockquote {
+            margin: 25px 0;
+            padding: 15px 20px;
+            background: #eef7ff;
+            border-left: 4px solid var(--blue);
+            color: #38506c;
+        }
+
+        article code {
+            background: #eef1f5;
+            padding: 2px 6px;
+            border-radius: 5px;
+        }
+
+        article table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        article th,
+        article td {
+            padding: 11px 13px;
+            border: 1px solid var(--line);
+            text-align: left;
+        }
+
+        article th {
+            background: #f3f7fb;
+        }
 
         section {
             scroll-margin-top: 70px;
         }
 
         .chapter-label {
+            max-width: 900px;
+            margin: 35px auto -35px;
+            padding: 0 22px;
+
             font-family: Arial, sans-serif;
             text-transform: uppercase;
             letter-spacing: 2px;
-            font-size: 1.0rem;
+            font-size: 1rem;
             color: var(--accent);
             font-weight: bold;
         }
@@ -164,7 +156,8 @@
             margin: 0 0 22px;
             font-size: 1.08rem;
         }
-.question {
+
+        .question {
             margin: 45px 0;
             padding: 25px;
             border-left: 4px solid var(--accent);
@@ -190,7 +183,8 @@
             font-size: 1.25rem;
             font-weight: bold;
         }
-.wolf-rule {
+
+        .wolf-rule {
             margin-top: 50px;
             padding: 30px;
             text-align: center;
@@ -210,38 +204,181 @@
         .wolf-rule strong {
             font-size: 1.25rem;
         }
-/* =========================
-           TABLE OF CONTENTS
+
+        /* =========================
+           AIWOLF
         ========================= */
 
-        .contents {
-            margin: 70px 0;
-            padding: 30px 0;
-            border-top: 1px solid var(--border);
-            border-bottom: 1px solid var(--border);
+        .aiwolf {
+            margin: 60px auto 20px;
+            max-width: 900px;
+            background: var(--paper);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 35px rgba(18,35,60,.08);
         }
 
-        .contents h3 {
-            margin-top: 0;
+        .aiwolf-header {
+            padding: 22px 24px;
+            background: #252525;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 15px;
         }
 
-        .contents ol {
-            padding-left: 25px;
+        .aiwolf-avatar {
+            font-size: 42px;
+            line-height: 1;
         }
 
-        .contents li {
-            margin: 10px 0;
+        .aiwolf-title {
+            font-family: Arial, sans-serif;
         }
 
-        .contents a {
+        .aiwolf-title strong {
+            display: block;
+            font-size: 1.2rem;
+        }
+
+        .aiwolf-title span {
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+
+        .aiwolf-body {
+            padding: 22px;
+        }
+
+        .aiwolf-intro {
+            margin-bottom: 18px;
+            font-size: 1rem;
+        }
+
+        .aiwolf-modes {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 18px;
+        }
+
+        .aiwolf-mode {
+            border: 1px solid var(--border);
+            background: white;
+            padding: 8px 14px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-family: Arial, sans-serif;
+            font-size: 0.8rem;
+        }
+
+        .aiwolf-mode.active {
+            background: #252525;
+            color: white;
+        }
+
+        .aiwolf-suggestions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .aiwolf-suggestion {
+            border: 1px solid var(--border);
+            background: #f7f3ed;
             color: var(--text);
-            text-decoration: none;
+            padding: 9px 13px;
+            border-radius: 18px;
+            cursor: pointer;
+            font-family: Arial, sans-serif;
+            font-size: 0.8rem;
         }
 
-        .contents a:hover {
-            color: var(--accent);
+        .aiwolf-suggestion:hover {
+            background: #eee7dd;
         }
-/* =========================
+
+        .aiwolf-chat {
+            min-height: 120px;
+            max-height: 420px;
+            overflow-y: auto;
+            margin-bottom: 15px;
+        }
+
+        .aiwolf-message {
+            margin-bottom: 15px;
+            padding: 13px 16px;
+            border-radius: 14px;
+            line-height: 1.6;
+        }
+
+        .aiwolf-message.wolf {
+            background: #f3f0eb;
+            margin-right: 30px;
+        }
+
+        .aiwolf-message.user {
+            background: #252525;
+            color: white;
+            margin-left: 30px;
+        }
+
+        .aiwolf-message-label {
+            display: block;
+            font-family: Arial, sans-serif;
+            font-size: 0.7rem;
+            font-weight: bold;
+            margin-bottom: 4px;
+            opacity: 0.65;
+        }
+
+        .aiwolf-input-area {
+            display: flex;
+            gap: 8px;
+            border-top: 1px solid var(--border);
+            padding-top: 15px;
+        }
+
+        .aiwolf-input {
+            flex: 1;
+            min-width: 0;
+            padding: 13px 15px;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            font-family: Arial, sans-serif;
+            font-size: 0.95rem;
+            outline: none;
+        }
+
+        .aiwolf-input:focus {
+            border-color: var(--accent);
+        }
+
+        .aiwolf-send {
+            padding: 0 18px;
+            border: none;
+            border-radius: 12px;
+            background: #252525;
+            color: white;
+            cursor: pointer;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
+
+        .aiwolf-send:hover {
+            opacity: 0.85;
+        }
+
+        .aiwolf-status {
+            margin-top: 10px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-size: 0.7rem;
+            color: var(--muted);
+        }
+
+        /* =========================
            FOOTER
         ========================= */
 
@@ -265,13 +402,19 @@
                 line-height: 1.7;
             }
 
-            .wolf {
-                font-size: 65px;
+            main {
+                padding: 45px 12px;
             }
 
-            main {
-                padding: 45px 22px;
-                box-shadow: none;
+            article {
+                padding: 25px 20px;
+                border-radius: 14px;
+            }
+
+            .chapter-label {
+                margin-left: 0;
+                margin-right: 0;
+                padding: 0 12px;
             }
 
             p {
@@ -281,19 +424,33 @@
             .question {
                 padding: 20px;
             }
+
+            .aiwolf {
+                border-radius: 15px;
+            }
+
+            .aiwolf-body {
+                padding: 16px;
+            }
+
+            .aiwolf-input-area {
+                flex-direction: row;
+            }
+
+            .aiwolf-send {
+                padding: 0 14px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    
-<!-- =========================
+    <!-- =========================
          NAVIGATION
     ========================= -->
 
     <nav class="top-nav">
-
         <div class="nav-inner">
 
             <span class="nav-title">
@@ -305,22 +462,149 @@
             </a>
 
         </div>
-
     </nav>
-<!-- =========================
+
+
+    <!-- =========================
+         CHAPTER LABEL
+    ========================= -->
+
+    <div class="chapter-label">
+        Chapter 1
+    </div>
+
+
+    <!-- =========================
          BOOK
     ========================= -->
-<div class="chapter-label">
-                Chapter 1
-</div>
+
     <main id="article">
 
-        <!-- =====================
-             CONTENTS
-        ====================== -->
-        
-       <article id="content">Loading article…</article>
-        
+        <article id="content">
+            Loading article…
+        </article>
+
+        <!-- =========================
+             AIWOLF COMPANION
+        ========================= -->
+
+        <section class="aiwolf" id="aiwolf">
+
+            <div class="aiwolf-header">
+
+                <div class="aiwolf-avatar">
+                    🐺
+                </div>
+
+                <div class="aiwolf-title">
+                    <strong>AIWolf</strong>
+                    <span>Your reading companion</span>
+                </div>
+
+            </div>
+
+            <div class="aiwolf-body">
+
+                <p class="aiwolf-intro">
+                    Hi! I'm AIWolf. I'm here to help you understand
+                    the ideas in this chapter—not to tell you what to think,
+                    but to help you think.
+                </p>
+
+
+                <!-- MODE -->
+
+                <div class="aiwolf-modes">
+
+                    <button
+                        class="aiwolf-mode active"
+                        data-mode="child">
+                        👦 For Kids
+                    </button>
+
+                    <button
+                        class="aiwolf-mode"
+                        data-mode="parent">
+                        👨‍👩‍👧 For Parents
+                    </button>
+
+                </div>
+
+
+                <!-- SUGGESTED QUESTIONS -->
+
+                <div class="aiwolf-suggestions">
+
+                    <button class="aiwolf-suggestion"
+                            data-question="What is the main idea of this chapter?">
+                        💡 Main idea
+                    </button>
+
+                    <button class="aiwolf-suggestion"
+                            data-question="Can you explain this chapter in a simple way?">
+                        🧠 Explain simply
+                    </button>
+
+                    <button class="aiwolf-suggestion"
+                            data-question="Can you give me a real-life example?">
+                        🎯 Give me an example
+                    </button>
+
+                    <button class="aiwolf-suggestion"
+                            data-question="Ask me a question that will help me think about this chapter.">
+                        💭 Make me think
+                    </button>
+
+                </div>
+
+
+                <!-- CHAT -->
+
+                <div
+                    class="aiwolf-chat"
+                    id="aiwolfChat">
+
+                    <div class="aiwolf-message wolf">
+
+                        <span class="aiwolf-message-label">
+                            🐺 AIWolf
+                        </span>
+
+                        What would you like to understand
+                        about this chapter?
+
+                    </div>
+
+                </div>
+
+
+                <!-- INPUT -->
+
+                <div class="aiwolf-input-area">
+
+                    <input
+                        type="text"
+                        id="aiwolfInput"
+                        class="aiwolf-input"
+                        placeholder="Ask AIWolf..."
+                        autocomplete="off">
+
+                    <button
+                        id="aiwolfSend"
+                        class="aiwolf-send">
+                        Send
+                    </button>
+
+                </div>
+
+                <div class="aiwolf-status" id="aiwolfStatus">
+                    AIWolf prototype • OpenAI API not connected yet
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
 
 
@@ -339,23 +623,339 @@
         </p>
 
     </footer>
+
+
+    <!-- =========================
+         MARKED.JS
+    ========================= -->
+
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-<script>
-  fetch("Chapter1-fil.md")
-    .then(r => {
-      if (!r.ok) throw new Error("Could not load article.md");
-      return r.text();
-    })
-    .then(md => {
-      document.getElementById("content").innerHTML = marked.parse(md);
-      document.title = document.querySelector("#content h1")?.textContent || document.title;
-    })
-    .catch(err => {
-      document.getElementById("content").innerHTML =
-        "<h1>Article unavailable</h1><p>Make sure <code>article.md</code> is in the same folder as this HTML file.</p><p>" +
-        err.message + "</p>";
-    });
-</script>
+
+
+    <!-- =========================
+         BOOK + AIWOLF JAVASCRIPT
+    ========================= -->
+
+    <script>
+
+        /* =========================
+           LOAD CHAPTER
+        ========================= */
+
+        fetch("Chapter1-fil.md")
+            .then(r => {
+
+                if (!r.ok) {
+                    throw new Error(
+                        "Could not load Chapter1-fil.md"
+                    );
+                }
+
+                return r.text();
+
+            })
+
+            .then(md => {
+
+                document.getElementById("content").innerHTML =
+                    marked.parse(md);
+
+                document.title =
+                    document.querySelector("#content h1")?.textContent
+                    || document.title;
+
+            })
+
+            .catch(err => {
+
+                document.getElementById("content").innerHTML =
+                    "<h1>Chapter unavailable</h1>" +
+                    "<p>Make sure <code>Chapter1-fil.md</code> " +
+                    "is in the same folder as this HTML file.</p>" +
+                    "<p>" + err.message + "</p>";
+
+            });
+
+
+        /* =========================
+           AIWOLF
+        ========================= */
+
+        let aiwolfMode = "child";
+
+
+        const chat = document.getElementById("aiwolfChat");
+        const input = document.getElementById("aiwolfInput");
+        const sendButton = document.getElementById("aiwolfSend");
+        const status = document.getElementById("aiwolfStatus");
+
+
+        /* =========================
+           MODE SWITCHING
+        ========================= */
+
+        document.querySelectorAll(".aiwolf-mode")
+            .forEach(button => {
+
+                button.addEventListener("click", () => {
+
+                    document
+                        .querySelectorAll(".aiwolf-mode")
+                        .forEach(btn =>
+                            btn.classList.remove("active")
+                        );
+
+                    button.classList.add("active");
+
+                    aiwolfMode =
+                        button.dataset.mode;
+
+                    if (aiwolfMode === "child") {
+
+                        input.placeholder =
+                            "Ask AIWolf...";
+
+                    } else {
+
+                        input.placeholder =
+                            "Ask AIWolf about parenting or the chapter...";
+
+                    }
+
+                });
+
+            });
+
+
+        /* =========================
+           ADD MESSAGE
+        ========================= */
+
+        function addMessage(text, sender) {
+
+            const message =
+                document.createElement("div");
+
+            message.className =
+                "aiwolf-message " + sender;
+
+            const label =
+                document.createElement("span");
+
+            label.className =
+                "aiwolf-message-label";
+
+            label.textContent =
+                sender === "wolf"
+                    ? "🐺 AIWolf"
+                    : "You";
+
+            message.appendChild(label);
+
+            const content =
+                document.createElement("div");
+
+            content.textContent = text;
+
+            message.appendChild(content);
+
+            chat.appendChild(message);
+
+            chat.scrollTop =
+                chat.scrollHeight;
+        }
+
+
+        /* =========================
+           DEMO AIWOLF RESPONSE
+           ========================= */
+
+        function getDemoResponse(question) {
+
+            const q =
+                question.toLowerCase();
+
+            if (q.includes("main idea")) {
+
+                return (
+                    "The main idea of this chapter is " +
+                    "something we should understand rather " +
+                    "than simply accept. Let's look at the " +
+                    "author's message and think about why it matters."
+                );
+
+            }
+
+            if (q.includes("example")) {
+
+                return (
+                    "Here's a simple example: imagine that " +
+                    "everyone around you is doing something " +
+                    "just because everyone else is doing it. " +
+                    "A wolf would pause and ask, 'Is this actually " +
+                    "right for me?'"
+                );
+
+            }
+
+            if (
+                q.includes("simple") ||
+                q.includes("explain")
+            ) {
+
+                return (
+                    "Sure. Think of the chapter as an invitation " +
+                    "to stop, question ideas, and understand " +
+                    "things for yourself instead of simply " +
+                    "following the crowd."
+                );
+
+            }
+
+            if (
+                q.includes("think") ||
+                q.includes("question")
+            ) {
+
+                return (
+                    "Here's something to think about: " +
+                    "Have you ever done something mainly because " +
+                    "everyone else was doing it? What made you decide " +
+                    "to follow—or not follow—them?"
+                );
+
+            }
+
+            if (aiwolfMode === "parent") {
+
+                return (
+                    "As a parent, you might explore this idea " +
+                    "with your child by asking what they think " +
+                    "the author means, rather than immediately " +
+                    "telling them what the lesson should be."
+                );
+
+            }
+
+            return (
+                "That's an interesting question. Let's look at " +
+                "the chapter carefully and try to understand " +
+                "what the author is saying. Then we can think " +
+                "about whether the idea makes sense in real life."
+            );
+
+        }
+
+
+        /* =========================
+           SEND MESSAGE
+        ========================= */
+
+        function sendMessage() {
+
+            const question =
+                input.value.trim();
+
+            if (!question) {
+                return;
+            }
+
+            addMessage(
+                question,
+                "user"
+            );
+
+            input.value = "";
+
+            status.textContent =
+                "AIWolf is thinking...";
+
+            /*
+             * TEMPORARY DEMO RESPONSE
+             *
+             * Later this section will become:
+             *
+             * fetch("/api/aiwolf", {
+             *     method: "POST",
+             *     headers: {
+             *         "Content-Type": "application/json"
+             *     },
+             *     body: JSON.stringify({
+             *         question: question,
+             *         chapter: 1,
+             *         mode: aiwolfMode
+             *     })
+             * })
+             *
+             * The Render server will then communicate
+             * with the OpenAI API.
+             */
+
+            setTimeout(() => {
+
+                const response =
+                    getDemoResponse(question);
+
+                addMessage(
+                    response,
+                    "wolf"
+                );
+
+                status.textContent =
+                    "AIWolf prototype • OpenAI API not connected yet";
+
+            }, 600);
+
+        }
+
+
+        /* =========================
+           SEND BUTTON
+        ========================= */
+
+        sendButton.addEventListener(
+            "click",
+            sendMessage
+        );
+
+
+        /* =========================
+           ENTER KEY
+        ========================= */
+
+        input.addEventListener(
+            "keydown",
+            event => {
+
+                if (event.key === "Enter") {
+                    sendMessage();
+                }
+
+            }
+        );
+
+
+        /* =========================
+           SUGGESTED QUESTIONS
+        ========================= */
+
+        document
+            .querySelectorAll(".aiwolf-suggestion")
+            .forEach(button => {
+
+                button.addEventListener("click", () => {
+
+                    input.value =
+                        button.dataset.question;
+
+                    sendMessage();
+
+                });
+
+            });
+
+    </script>
 
 </body>
 </html>
+```
