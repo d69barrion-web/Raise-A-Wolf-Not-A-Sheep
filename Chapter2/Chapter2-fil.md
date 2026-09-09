@@ -1,5 +1,3 @@
-![chapter2.png](chapter2.png)
-
 # MAG-ISIP BAGO MANIWALA
 
 ### Hindi Lahat ng Naririnig Mo ay Totoo
